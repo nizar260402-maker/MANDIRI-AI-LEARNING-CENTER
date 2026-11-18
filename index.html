@@ -3,142 +3,155 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#071a35">
 <title>Mandiri AI Learning Center | SMKS Mandiri Bandar Agung</title>
 <style>
-:root{--navy:#071a35;--navy2:#12345a;--gold:#d9ad53;--gold2:#f3dda8;--bg:#f3f6fa;--ink:#19283d;--muted:#68788e;--line:#e1e7ef;--green:#16865d;--red:#bd4545}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.side{position:fixed;inset:0 auto 0 0;width:250px;background:var(--navy);color:white;padding:18px 13px;overflow:auto;z-index:5}.brand{padding:8px 10px 20px;border-bottom:1px solid #ffffff25}.mark{width:42px;height:42px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-weight:bold;font-size:21px;margin-bottom:10px}.brand h2{font-size:14px;line-height:1.5;margin:0}.brand small{color:#bac8d8;letter-spacing:1px}.nav-label{font-size:10px;color:#91a4bd;margin:20px 10px 7px;letter-spacing:1.3px}.nav button{width:100%;border:0;background:transparent;color:#d9e2ed;text-align:left;padding:10px 11px;border-radius:8px;margin:2px 0;font-size:12px}.nav button:hover,.nav button.active{background:#ffffff18;color:var(--gold2)}.nav button span{display:inline-block;width:23px}.main{margin-left:250px;padding:22px 28px 45px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:20px}.top h1{font-size:21px;color:var(--navy);margin:0}.top p{font-size:11px;color:var(--muted);margin:5px 0}.topright{display:flex;gap:8px;align-items:center}.menu{display:none;background:var(--navy);color:white;border:0;border-radius:8px;padding:9px 12px}.page{display:none}.page.active{display:block}.hero{background:linear-gradient(120deg,#071a35,#19436d);color:white;padding:28px;border-radius:16px;position:relative;overflow:hidden}.hero:after{content:"AI";position:absolute;right:28px;top:-38px;font-size:170px;font-weight:bold;color:#ffffff0b}.eyebrow{font-size:10px;color:var(--gold2);letter-spacing:2px}.hero h2{font-size:clamp(23px,4vw,34px);margin:12px 0;max-width:700px}.hero p{font-size:13px;line-height:1.7;color:#d5e0ed;max-width:700px}.btn{border:0;border-radius:8px;background:var(--gold);color:#19283d;font-weight:bold;padding:10px 14px;font-size:12px}.btn.dark{background:var(--navy);color:white}.btn.light{background:#e9eef5;color:var(--navy)}.btn.danger{background:#f8e9e9;color:#9b3030}.btn.small{padding:7px 10px;font-size:11px}.head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:23px 0 12px}.head h2{font-size:17px;color:var(--navy);margin:0}.head p{font-size:11px;color:var(--muted);margin:4px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 3px 10px #122c4710}.card h3{font-size:14px;color:var(--navy);margin:7px 0}.card p,.card li{font-size:12px;line-height:1.7;color:var(--muted)}.icon{font-size:23px}.stat{font-size:25px;font-weight:bold;color:var(--navy);margin-top:7px}.muted{color:var(--muted)}.tiny{font-size:10px;color:var(--muted)}.pill{display:inline-block;padding:5px 8px;border-radius:20px;background:#f6edda;color:#795a20;font-size:10px;font-weight:bold}.bar{height:8px;background:#e8edf3;border-radius:20px;overflow:hidden;margin-top:9px}.bar span{display:block;height:100%;background:var(--gold)}.list{display:grid;gap:9px}.item{background:white;border:1px solid var(--line);border-radius:10px;padding:13px;display:flex;align-items:center;justify-content:space-between;gap:10px}.item h3{font-size:13px;margin:0 0 5px;color:var(--navy)}.item p{font-size:11px;color:var(--muted);margin:0}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}.toolbar input,.toolbar select,.field,.formgrid input,.formgrid select{border:1px solid var(--line);background:white;padding:10px;border-radius:8px;min-width:0}.toolbar input{flex:1;min-width:150px}.lesson{background:white;border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:14px}.lesson h2{color:var(--navy)}.lesson h3{font-size:14px;color:var(--navy);margin-top:20px}.lesson p,.lesson li{font-size:12px;line-height:1.8}.callout,.notice{padding:12px;background:#f7f8fa;border-left:4px solid var(--gold);border-radius:7px;font-size:12px;line-height:1.7}.notice{background:#fff8e9;color:#705622;border:1px solid #f0dfb9}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.formgrid label{display:block;font-size:10px;color:var(--muted);margin-bottom:5px}.formgrid input,.formgrid select{width:100%}textarea{width:100%;min-height:90px;padding:11px;border:1px solid var(--line);border-radius:8px;resize:vertical}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.tablewrap{overflow:auto;margin:10px 0}table{width:100%;border-collapse:collapse;background:white;font-size:11px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{background:#f1f4f8;color:var(--navy)}.good{color:var(--green);font-weight:bold}.bad{color:var(--red);font-weight:bold}.result{background:#edf7f2;border-radius:8px;padding:12px;margin-top:10px;font-size:12px;line-height:1.8}.certificate{background:white;border:8px double var(--gold);padding:35px;text-align:center;max-width:750px;margin:15px auto}.certificate h2{font-family:Georgia,serif;color:var(--navy);font-size:27px}.certname{font-size:24px;color:#9a7028;padding:10px;border-bottom:1px solid var(--gold);display:inline-block}.overlay{display:none}.footer{text-align:center;color:var(--muted);font-size:10px;padding:30px 0 5px}
-@media(max-width:900px){.side{transform:translateX(-100%);transition:.2s}.side.open{transform:translateX(0)}.main{margin:0;padding:17px}.menu{display:block}.overlay.show{display:block;position:fixed;inset:0;background:#0007;z-index:4}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.main{padding:13px}.top h1{font-size:17px}.grid,.grid.two{grid-template-columns:1fr}.hero{padding:21px}.hero:after{font-size:100px}.formgrid{grid-template-columns:1fr}.lesson{padding:15px}.topright .student{display:none}}
-@media print{.side,.top,.footer,.no-print{display:none!important}.main{margin:0;padding:0}.page{display:none!important}#certificate.page.active{display:block!important}.certificate{min-height:90vh;display:flex;flex-direction:column;justify-content:center}}
+:root{--navy:#071a35;--navy2:#102b50;--gold:#d9ad53;--gold2:#f2d58d;--white:#fff;--bg:#f3f6fa;--ink:#17243a;--muted:#68778d;--line:#e1e7ef;--green:#16865d;--red:#bd4545}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{display:flex;min-height:100vh}.sidebar{width:255px;background:var(--navy);color:#fff;padding:22px 15px;position:fixed;inset:0 auto 0 0;overflow:auto;z-index:5}.brand{padding:5px 10px 22px;border-bottom:1px solid #ffffff20}.brand-mark{width:43px;height:43px;border:2px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:20px;margin-bottom:12px}.brand h2{font-size:15px;line-height:1.4;margin:0;letter-spacing:.5px}.brand p{font-size:10px;color:#c4cfdd;margin:6px 0 0;letter-spacing:1px}.nav-label{font-size:10px;color:#91a4bd;margin:22px 10px 8px;text-transform:uppercase;letter-spacing:1.4px}.nav button{display:flex;gap:11px;align-items:center;width:100%;padding:11px 12px;margin:3px 0;border:0;border-radius:9px;background:transparent;color:#d8e1ec;text-align:left;font-size:13px}.nav button:hover,.nav button.active{background:#ffffff16;color:var(--gold2)}.nav button span:first-child{width:20px;text-align:center}.main{margin-left:255px;width:calc(100% - 255px);padding:24px 30px 50px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:23px}.topbar h1{font-size:21px;margin:0;color:var(--navy)}.topbar p{margin:5px 0 0;color:var(--muted);font-size:12px}.top-actions{display:flex;gap:8px;align-items:center}.student-name{font-size:12px;color:var(--muted)}.menu-toggle{display:none;border:0;background:var(--navy);color:white;padding:9px 12px;border-radius:8px}.page{display:none}.page.active{display:block}.hero{background:linear-gradient(120deg,#071a35,#173c66);color:white;border-radius:18px;padding:30px;position:relative;overflow:hidden}.hero:after{content:"AI";position:absolute;right:35px;top:-30px;font-size:180px;font-weight:900;color:#ffffff0b}.eyebrow{color:var(--gold2);font-size:11px;letter-spacing:2px;text-transform:uppercase}.hero h2{font-size:clamp(24px,4vw,36px);max-width:650px;margin:13px 0}.hero p{color:#d4deea;max-width:650px;line-height:1.7;font-size:14px}.btn{border:0;border-radius:9px;padding:11px 16px;font-weight:700;font-size:12px;background:var(--gold);color:#17243a}.btn:hover{filter:brightness(1.05)}.btn.secondary{background:#e8edf4;color:var(--navy)}.btn.dark{background:var(--navy);color:white}.btn.small{padding:8px 11px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:25px 0 13px}.section-head h2{font-size:17px;margin:0;color:var(--navy)}.section-head p{font-size:12px;color:var(--muted);margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 3px 12px #142b4610}.card h3{font-size:15px;margin:8px 0;color:var(--navy)}.card p{font-size:12px;line-height:1.65;color:var(--muted)}.card-icon{font-size:24px}.stat{font-size:26px;font-weight:800;color:var(--navy);margin-top:8px}.muted{color:var(--muted)}.small-text{font-size:11px;color:var(--muted)}.progress{height:8px;background:#e9edf3;border-radius:20px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:var(--gold);width:0}.pill{display:inline-block;border-radius:30px;padding:5px 9px;background:#f6edda;color:#805d1e;font-size:10px;font-weight:700}.list{display:grid;gap:10px}.module-row{display:flex;justify-content:space-between;align-items:center;gap:12px;background:white;border:1px solid var(--line);padding:14px;border-radius:11px}.module-row h3{font-size:13px;margin:0 0 5px}.module-row p{font-size:11px;color:var(--muted);margin:0}.module-row button{flex-shrink:0}.toolbar{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0}.toolbar input,.toolbar select,.field{padding:11px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);min-width:0}.toolbar input{flex:1;min-width:160px}.lesson{background:white;border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:15px}.lesson h2{color:var(--navy);font-size:22px}.lesson h3{font-size:15px;color:var(--navy);margin-top:22px}.lesson p,.lesson li{font-size:13px;line-height:1.8}.lesson ul,.lesson ol{padding-left:22px}.lesson .callout{background:#f6f8fb;border-left:4px solid var(--gold);padding:13px;border-radius:6px;font-size:13px;line-height:1.7}.lesson textarea,.wide-textarea{width:100%;min-height:100px;padding:12px;border:1px solid var(--line);border-radius:9px;resize:vertical}.lesson-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.quiz-option{display:block;padding:12px;border:1px solid var(--line);border-radius:9px;margin:8px 0;font-size:13px}.quiz-option input{margin-right:8px}.result{padding:13px;border-radius:9px;background:#edf7f2;color:#176443;margin-top:12px;font-size:13px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;background:white;font-size:12px}td,th{padding:11px;border-bottom:1px solid var(--line);text-align:left}th{background:#f4f6f9;color:var(--navy)}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.field-group label{display:block;font-size:11px;color:var(--muted);margin:0 0 5px}.field-group input,.field-group select{width:100%;padding:11px;border:1px solid var(--line);border-radius:8px}.notice{background:#fff8e9;border:1px solid #f0dfb9;padding:13px;border-radius:9px;font-size:12px;line-height:1.7;color:#6e5423}.footer{text-align:center;color:var(--muted);font-size:10px;padding:30px 0 5px}.hidden{display:none!important}.certificate{background:white;border:8px double var(--gold);padding:35px;text-align:center;max-width:760px;margin:15px auto}.certificate h2{font-family:Georgia,serif;color:var(--navy);font-size:28px}.certificate .cert-name{font-size:25px;color:#9a7028;border-bottom:1px solid var(--gold);display:inline-block;padding:10px 25px}.mobile-overlay{display:none}
+@media(max-width:900px){.sidebar{transform:translateX(-100%);transition:.25s}.sidebar.open{transform:translateX(0)}.main{margin:0;width:100%;padding:18px}.menu-toggle{display:block}.mobile-overlay.show{display:block;position:fixed;inset:0;background:#0007;z-index:4}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.main{padding:14px}.topbar{align-items:flex-start}.topbar h1{font-size:17px}.student-name{display:none}.grid,.grid.two{grid-template-columns:1fr}.hero{padding:22px}.hero:after{font-size:110px;right:5px}.module-row{align-items:flex-start}.module-row button{font-size:10px;padding:8px}.field-grid{grid-template-columns:1fr}.lesson{padding:16px}.section-head{align-items:flex-start}}
+@media print{body{background:white}.sidebar,.topbar,.footer,.no-print{display:none!important}.main{margin:0;width:100%;padding:0}.page{display:none!important}#certificate.page.active{display:block!important}.certificate{margin:0 auto;min-height:90vh;display:flex;flex-direction:column;justify-content:center}}
 </style>
 </head>
 <body>
-<div class="overlay" id="overlay" onclick="menu(false)"></div>
-<aside class="side" id="side">
- <div class="brand"><div class="mark">M</div><h2>MANDIRI AI<br>LEARNING CENTER</h2><small>SMKS MANDIRI BANDAR AGUNG</small></div>
+<div class="mobile-overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="brand-mark">M</div><h2>MANDIRI AI<br>LEARNING CENTER</h2><p>SMKS MANDIRI BANDAR AGUNG</p></div>
  <nav class="nav">
-  <div class="nav-label">UTAMA</div>
-  <button class="active" data-p="home" onclick="go('home')"><span>⌂</span>Beranda</button>
-  <button data-p="dashboard" onclick="go('dashboard')"><span>▦</span>Dashboard</button>
-  <div class="nav-label">PEMBELAJARAN</div>
-  <button data-p="materi" onclick="go('materi')"><span>▤</span>Materi AI</button>
-  <button data-p="akl" onclick="go('akl')"><span>▣</span>Jalur AKL</button>
-  <button data-p="marketing" onclick="go('marketing')"><span>◇</span>Jalur Pemasaran</button>
-  <button data-p="lab" onclick="go('lab')"><span>⚗</span>Laboratorium AI</button>
-  <button data-p="prompts" onclick="go('prompts')"><span>✧</span>Prompt Library</button>
-  <button data-p="dictionary" onclick="go('dictionary')"><span>Ａ</span>AI Dictionary</button>
-  <button data-p="challenge" onclick="go('challenge')"><span>★</span>AI Challenge</button>
-  <button data-p="quiz" onclick="go('quiz')"><span>✓</span>Quiz Center</button>
-  <button data-p="projects" onclick="go('projects')"><span>▧</span>Project Center</button>
-  <div class="nav-label">PENCAPAIAN</div>
-  <button data-p="portfolio" onclick="go('portfolio')"><span>▣</span>Student Portfolio</button>
-  <button data-p="certificate" onclick="go('certificate')"><span>♜</span>Sertifikat</button>
-  <button data-p="leaderboard" onclick="go('leaderboard')"><span>♛</span>Leaderboard</button>
-  <div class="nav-label">PENGELOLA</div>
-  <button data-p="teacher" onclick="go('teacher')"><span>♧</span>Panduan Guru</button>
+  <div class="nav-label">Utama</div>
+  <button class="active" data-page="home" onclick="showPage('home')"><span>⌂</span>Beranda</button>
+  <button data-page="dashboard" onclick="showPage('dashboard')"><span>▦</span>Dashboard</button>
+  <div class="nav-label">Pembelajaran</div>
+  <button data-page="materi" onclick="showPage('materi')"><span>▤</span>Materi AI</button>
+  <button data-page="akl" onclick="showPage('akl')"><span>▣</span>Jalur AKL</button>
+  <button data-page="marketing" onclick="showPage('marketing')"><span>◇</span>Jalur Pemasaran</button>
+  <button data-page="lab" onclick="showPage('lab')"><span>⚗</span>Laboratorium AI</button>
+  <button data-page="prompts" onclick="showPage('prompts')"><span>✧</span>Prompt Library</button>
+  <button data-page="dictionary" onclick="showPage('dictionary')"><span>Ａ</span>AI Dictionary</button>
+  <button data-page="challenge" onclick="showPage('challenge')"><span>★</span>AI Challenge</button>
+  <button data-page="quiz" onclick="showPage('quiz')"><span>✓</span>Quiz Center</button>
+  <button data-page="projects" onclick="showPage('projects')"><span>▧</span>Project Center</button>
+  <div class="nav-label">Pencapaian</div>
+  <button data-page="portfolio" onclick="showPage('portfolio')"><span>▣</span>Student Portfolio</button>
+  <button data-page="certificate" onclick="showPage('certificate')"><span>♜</span>Sertifikat</button>
+  <button data-page="leaderboard" onclick="showPage('leaderboard')"><span>♛</span>Leaderboard</button>
+  <div class="nav-label">Pengelola</div>
+  <button data-page="teacher" onclick="showPage('teacher')"><span>♧</span>Panduan Guru</button>
  </nav>
 </aside>
 <main class="main">
-<header class="top"><div style="display:flex;gap:10px;align-items:center"><button class="menu" onclick="menu()">☰</button><div><h1 id="title">Beranda</h1><p>Belajar AI. Berpikir Kreatif. Menciptakan Inovasi.</p></div></div><div class="topright"><span class="student" id="studentLabel">Siswa</span><button class="btn light small" onclick="editName()">Profil</button></div></header>
+ <header class="topbar">
+  <div style="display:flex;gap:10px;align-items:center"><button class="menu-toggle" onclick="toggleMenu()">☰</button><div><h1 id="pageTitle">Beranda</h1><p>Belajar AI. Berpikir Kreatif. Menciptakan Inovasi.</p></div></div>
+  <div class="top-actions"><span class="student-name" id="studentLabel">Siswa</span><button class="btn secondary small" onclick="editStudent()">Profil</button></div>
+ </header>
 
-<section class="page active" id="home">
- <div class="hero"><div class="eyebrow">SMKS MANDIRI BANDAR AGUNG</div><h2>Belajar AI untuk Masa Depan</h2><p>Platform pembelajaran kecerdasan buatan untuk siswa AKL dan Pemasaran. Belajar konsep, praktik, membangun bisnis, dan menghasilkan karya.</p><button class="btn" onclick="go('materi')">Mulai belajar →</button></div>
- <div class="head"><div><h2>Perjalanan Belajar</h2><p>Progres tersimpan di perangkat ini.</p></div></div>
- <div class="grid"><div class="card"><div class="tiny">TOTAL MODUL</div><div class="stat" id="totalModules">24</div></div><div class="card"><div class="tiny">MODUL SELESAI</div><div class="stat" id="doneCount">0</div></div><div class="card"><div class="tiny">PROGRES</div><div class="stat" id="percent">0%</div><div class="bar"><span id="bar" style="width:0%"></span></div></div></div>
- <div class="head"><h2>Laboratorium Kompetensi</h2></div>
- <div class="grid two"><div class="card"><div class="icon">🧾</div><h3>Laboratorium Akuntansi AKL</h3><p>Transaksi, jurnal umum, buku besar, neraca saldo, penyesuaian, dan laporan keuangan.</p><button class="btn dark" onclick="go('akl')">Masuk Lab AKL</button></div><div class="card"><div class="icon">📣</div><h3>Laboratorium Bisnis Pemasaran</h3><p>Riset pasar, produk, biaya, harga jual, branding, konten, dan strategi promosi.</p><button class="btn dark" onclick="go('marketing')">Masuk Lab Pemasaran</button></div></div>
-</section>
-
-<section class="page" id="dashboard">
- <div class="hero"><div class="eyebrow">STUDENT DASHBOARD</div><h2>Dashboard Pembelajaran</h2><p>Ringkasan kegiatan, progres modul, nilai, dan karya.</p></div>
- <div class="grid" style="margin-top:14px"><div class="card"><div class="tiny">Modul selesai</div><div class="stat" id="dashDone">0</div></div><div class="card"><div class="tiny">Nilai kuis</div><div class="stat" id="dashScore">-</div></div><div class="card"><div class="tiny">Proyek</div><div class="stat" id="dashProjects">0</div></div></div>
- <div class="card" style="margin-top:14px"><h3>Aktivitas terakhir</h3><div id="activity"></div></div>
-</section>
-
-<section class="page" id="materi">
- <div class="head"><div><h2>Materi AI</h2><p>Empat level, dari fundamental sampai kewirausahaan.</p></div></div>
- <div class="toolbar"><input id="searchModule" placeholder="Cari materi..." oninput="renderModules()"><select id="filterLevel" onchange="renderModules()"><option value="all">Semua level</option><option value="1">Level 1 Fundamental</option><option value="2">Level 2 Skills</option><option value="3">Level 3 Professional</option><option value="4">Level 4 Entrepreneurship</option></select></div>
- <div id="moduleList" class="list"></div><div id="lesson"></div>
-</section>
-
-<section class="page" id="akl">
- <div class="hero"><div class="eyebrow">ACCOUNTING & FINANCE LAB</div><h2>Laboratorium Akuntansi AKL</h2><p>Masukkan transaksi simulasi, susun jurnal, lihat buku besar dan neraca saldo, lalu susun laporan sederhana. Semua angka dapat ditelusuri.</p></div>
- <div class="notice" style="margin-top:13px">Gunakan data latihan. Setiap transaksi yang dimasukkan di sini dicatat sebagai satu akun debit dan satu akun kredit. Sistem ini cocok untuk latihan dasar perusahaan jasa/dagang sederhana, bukan pengganti software akuntansi resmi.</div>
- <div class="head"><h2>1. Daftar Akun (Chart of Accounts)</h2></div>
- <div class="card"><div class="tablewrap"><table><thead><tr><th>Kode</th><th>Nama akun</th><th>Kelompok</th><th>Saldo normal</th></tr></thead><tbody id="coaTable"></tbody></table></div></div>
- <div class="head"><h2>2. Input Transaksi / Jurnal Umum</h2></div>
- <div class="card">
-  <div class="formgrid">
-   <div><label>Tanggal</label><input id="txDate" type="date"></div>
-   <div><label>Jenis pencatatan</label><select id="txType"><option value="normal">Transaksi umum</option><option value="adjust">Jurnal penyesuaian</option></select></div>
-   <div><label>Keterangan</label><input id="txDesc" placeholder="Contoh: Setoran modal pemilik"></div>
-   <div><label>Nominal (Rp)</label><input id="txAmount" type="number" min="1" placeholder="5000000"></div>
-   <div><label>Akun debit</label><select id="txDebit"></select></div>
-   <div><label>Akun kredit</label><select id="txCredit"></select></div>
+ <section class="page active" id="home">
+  <div class="hero"><div class="eyebrow">SMKS MANDIRI BANDAR AGUNG</div><h2>Selamat Datang di Mandiri AI Learning Center</h2><p>Tempat belajar kecerdasan buatan secara bertahap, praktis, dan bertanggung jawab. Kuasai AI untuk akuntansi, pemasaran, administrasi, dan kewirausahaan.</p><button class="btn" onclick="showPage('materi')">Mulai Belajar →</button></div>
+  <div class="section-head"><div><h2>Perjalanan Belajarmu</h2><p>Pantau perkembangan kompetensi AI.</p></div></div>
+  <div class="grid">
+   <div class="card"><div class="card-icon">📚</div><div class="muted small-text">Total Modul</div><div class="stat" id="totalModules">24</div></div>
+   <div class="card"><div class="card-icon">🏆</div><div class="muted small-text">Modul Selesai</div><div class="stat" id="completedCount">0</div></div>
+   <div class="card"><div class="card-icon">📈</div><div class="muted small-text">Progres Belajar</div><div class="stat" id="progressPercent">0%</div><div class="progress"><span id="progressBar"></span></div></div>
   </div>
-  <div class="actions"><button class="btn dark" onclick="addTransaction()">Tambah ke jurnal</button><button class="btn light" onclick="loadDemo()">Muat contoh transaksi</button><button class="btn danger" onclick="clearAccounting()">Hapus data latihan</button></div>
-  <p class="tiny">Debit dan kredit pada satu transaksi harus sama. Gunakan transaksi yang benar-benar didukung bukti.</p>
- </div>
- <div class="head"><h2>3. Jurnal Umum</h2></div>
- <div class="card"><div class="tablewrap"><table><thead><tr><th>Tanggal</th><th>Keterangan</th><th>Akun debit</th><th>Akun kredit</th><th>Nominal</th><th>Jenis</th><th>Aksi</th></tr></thead><tbody id="journalTable"></tbody></table></div><div id="journalEmpty" class="tiny">Belum ada transaksi.</div></div>
- <div class="head"><h2>4. Buku Besar</h2></div>
- <div class="card"><div class="toolbar"><select id="ledgerFilter" onchange="renderAccounting()"><option value="all">Semua akun</option></select></div><div id="ledgerArea"></div></div>
- <div class="head"><h2>5. Neraca Saldo</h2></div>
- <div class="card"><div id="trialArea"></div></div>
- <div class="head"><h2>6. Laporan Laba Rugi</h2></div>
- <div class="card"><div id="incomeArea"></div></div>
- <div class="head"><h2>7. Laporan Posisi Keuangan Sederhana</h2></div>
- <div class="card"><div id="positionArea"></div></div>
- <div class="head"><h2>8. Pemeriksaan dan Ekspor</h2></div>
- <div class="card"><div id="accountCheck"></div><div class="actions"><button class="btn dark" onclick="exportAccounting()">Unduh laporan CSV</button><button class="btn light" onclick="window.print()">Cetak halaman</button></div></div>
-</section>
-
-<section class="page" id="marketing">
- <div class="hero"><div class="eyebrow">BUSINESS & MARKETING LAB</div><h2>Laboratorium Bisnis dan Pemasaran</h2><p>Bangun konsep produk dari riset konsumen sampai promosi dan evaluasi usaha.</p></div>
- <div class="head"><h2>1. Profil Produk dan Konsumen</h2></div>
- <div class="card">
-  <div class="formgrid">
-   <div><label>Nama produk</label><input id="mName" placeholder="Contoh: Keripik pisang"></div>
-   <div><label>Kategori produk</label><select id="mCategory"><option>Makanan dan minuman</option><option>Fashion</option><option>Kerajinan</option><option>Jasa</option><option>Produk digital</option><option>Lainnya</option></select></div>
-   <div><label>Target konsumen</label><input id="mTarget" placeholder="Contoh: Pelajar usia 15–19 tahun"></div>
-   <div><label>Masalah/kebutuhan konsumen</label><input id="mNeed" placeholder="Kebutuhan yang ingin dipenuhi"></div>
-   <div><label>Keunggulan produk</label><input id="mUSP" placeholder="Apa pembeda produk?"></div>
-   <div><label>Saluran penjualan</label><input id="mChannel" placeholder="WhatsApp, bazar, media sosial"></div>
+  <div class="section-head"><div><h2>Jalur Pembelajaran</h2><p>Pilih kompetensi sesuai program keahlian.</p></div></div>
+  <div class="grid two">
+   <div class="card"><div class="card-icon">🧾</div><h3>AKL – Akuntansi dan Keuangan Lembaga</h3><p>Gunakan AI untuk pencatatan transaksi, jurnal, buku besar, laporan keuangan, analisis, dan administrasi keuangan.</p><button class="btn dark" onclick="showPage('akl')">Jelajahi Jalur AKL</button></div>
+   <div class="card"><div class="card-icon">📣</div><h3>Pemasaran</h3><p>Pelajari riset pasar, perilaku konsumen, branding, desain promosi, copywriting, video, dan strategi pemasaran digital.</p><button class="btn dark" onclick="showPage('marketing')">Jelajahi Jalur Pemasaran</button></div>
   </div>
- </div>
- <div class="head"><h2>2. Kalkulator Modal, HPP, dan Harga Jual</h2></div>
- <div class="card">
-  <div class="formgrid">
-   <div><label>Biaya bahan baku total (Rp)</label><input id="cMaterial" type="number" min="0" value="200000"></div>
-   <div><label>Biaya tenaga kerja langsung (Rp)</label><input id="cLabor" type="number" min="0" value="50000"></div>
-   <div><label>Biaya overhead produksi (Rp)</label><input id="cOverhead" type="number" min="0" value="30000"></div>
-   <div><label>Jumlah produk jadi (unit)</label><input id="cUnits" type="number" min="1" value="20"></div>
-   <div><label>Biaya tetap lain per periode (Rp)</label><input id="cFixed" type="number" min="0" value="50000"></div>
-   <div><label>Target margin atas HPP (%)</label><input id="cMargin" type="number" min="0" value="30"></div>
-   <div><label>Target penjualan (unit)</label><input id="cTargetQty" type="number" min="0" value="20"></div>
+ </section>
+
+ <section class="page" id="dashboard">
+  <div class="hero"><div class="eyebrow">STUDENT DASHBOARD</div><h2>Dashboard Pembelajaran</h2><p>Semua progres dan aktivitas yang tersimpan pada browser/perangkat ini.</p></div>
+  <div class="grid" style="margin-top:15px">
+   <div class="card"><div class="small-text">Modul selesai</div><div class="stat" id="dashDone">0</div></div>
+   <div class="card"><div class="small-text">Nilai kuis terakhir</div><div class="stat" id="dashScore">-</div></div>
+   <div class="card"><div class="small-text">Proyek tersimpan</div><div class="stat" id="dashProjects">0</div></div>
   </div>
-  <div class="actions"><button class="btn dark" onclick="calculateBusiness()">Hitung biaya dan harga</button><button class="btn light" onclick="saveBusinessPlan()">Simpan rencana bisnis</button></div>
-  <div id="businessResult"></div>
-  <p class="tiny">Kalkulator ini menghitung biaya produksi per unit dari bahan baku, tenaga kerja langsung, dan overhead. Biaya tetap lain ditampilkan terpisah agar tidak tercampur dengan HPP produksi. Untuk usaha dagang, sesuaikan komponen biaya dengan karakter usaha.</p>
- </div>
- <div class="head"><h2>3. Branding dan Identitas Merek</h2></div>
- <div class="card">
-  <div class="formgrid"><div><label>Nama merek</label><input id="brandName" placeholder="Nama brand"></div><div><label>Slogan</label><input id="brandTagline" placeholder="Slogan singkat"></div><div><label>Karakter merek</label><input id="brandTone" placeholder="Ramah, modern, alami..."></div><div><label>Warna identitas</label><input id="brandColor" placeholder="Contoh: hijau dan krem"></div></div>
-  <div class="actions"><button class="btn dark" onclick="saveBrand()">Simpan identitas merek</button></div>
- </div>
- <div class="head"><h2>4. Generator Brief Promosi</h2></div>
- <div class="card"><div class="formgrid"><div><label>Tujuan promosi</label><select id="adGoal"><option>Mengenalkan produk</option><option>Meningkatkan penjualan</option><option>Membangun kepercayaan</option><option>Mengumumkan produk baru</option></select></div><div><label>Platform</label><select id="adPlatform"><option>Instagram</option><option>TikTok</option><option>WhatsApp</option><option>Poster cetak</option><option>Facebook</option></select></div></div><div class="actions"><button class="btn dark" onclick="generateAd()">Buat brief promosi</button></div><div id="adResult"></div></div>
- <div class="head"><h2>5. Kalender Konten 7 Hari</h2></div>
- <div class="card"><div id="contentCalendar"></div><button class="btn light" onclick="makeCalendar()">Buat kalender konten</button></div>
-</section>
+  <div class="card" style="margin-top:15px"><h3>Aktivitas terakhir</h3><div id="activityList" class="list muted small-text">Belum ada aktivitas.</div></div>
+ </section>
 
-<section class="page" id="lab">
- <div class="head"><h2>Laboratorium AI</h2><p>AI sebagai asisten, manusia tetap memeriksa hasil.</p></div>
- <div class="grid two"><div class="card"><h3>🧾 Praktik AKL</h3><p>Gunakan transaksi simulasi, susun jurnal, posting buku besar, dan periksa laporan.</p><button class="btn dark" onclick="go('akl')">Buka Lab AKL</button></div><div class="card"><h3>📣 Praktik Pemasaran</h3><p>Riset pasar, rencana produk, branding, kalkulasi biaya, dan promosi.</p><button class="btn dark" onclick="go('marketing')">Buka Lab Pemasaran</button></div></div>
- <div class="card" style="margin-top:13px"><h3>Etika penggunaan AI</h3><ol><li>Jangan unggah data pribadi, rekening, pelanggan, atau dokumen rahasia.</li><li>Bedakan fakta, asumsi, dan simulasi.</li><li>Verifikasi angka dan referensi.</li><li>Jelaskan bagian tugas yang dibantu AI.</li><li>Jangan menyalin hasil tanpa memahami isinya.</li></ol></div>
-</section>
+ <section class="page" id="materi">
+  <div class="section-head"><div><h2>Materi Pembelajaran AI</h2><p>Empat level pembelajaran dari dasar hingga kewirausahaan.</p></div></div>
+  <div class="toolbar"><input id="moduleSearch" placeholder="Cari judul materi..." oninput="renderModules()"><select id="levelFilter" onchange="renderModules()"><option value="all">Semua level</option><option value="1">Level 1 – Fundamental</option><option value="2">Level 2 – Skills</option><option value="3">Level 3 – Professional</option><option value="4">Level 4 – Entrepreneurship</option></select></div>
+  <div id="moduleList" class="list"></div><div id="lessonDetail"></div>
+ </section>
 
-<section class="page" id="prompts"><div class="head"><h2>Prompt Library</h2></div><div id="promptList" class="grid two"></div></section>
-<section class="page" id="dictionary"><div class="head"><h2>AI Dictionary</h2></div><input class="field" id="dictSearch" placeholder="Cari istilah..." oninput="renderDictionary()" style="width
+ <section class="page" id="akl">
+  <div class="hero"><div class="eyebrow">ACCOUNTING & FINANCE PATH</div><h2>Jalur Kompetensi AKL</h2><p>Penerapan AI untuk mendukung pekerjaan akuntansi. Hasil AI wajib diperiksa dengan bukti transaksi dan perhitungan manual.</p></div>
+  <div class="grid" style="margin-top:15px">
+   <div class="card"><h3>📒 Pencatatan transaksi</h3><p>Mengidentifikasi akun, tanggal, nominal, dan bukti transaksi.</p></div>
+   <div class="card"><h3>📔 Jurnal umum</h3><p>Memahami debit dan kredit serta menyusun jurnal.</p></div>
+   <div class="card"><h3>📚 Buku besar</h3><p>Memindahkan jurnal ke akun buku besar.</p></div>
+   <div class="card"><h3>⚖ Neraca saldo</h3><p>Memeriksa keseimbangan saldo debit dan kredit.</p></div>
+   <div class="card"><h3>📊 Laporan keuangan</h3><p>Menyusun laba rugi dan membaca kondisi usaha.</p></div>
+   <div class="card"><h3>🧮 HPP & analisis</h3><p>Menghitung harga pokok dan mengevaluasi biaya.</p></div>
+  </div>
+  <div class="section-head"><h2>Simulasi Laporan Laba Rugi</h2></div>
+  <div class="card">
+   <p>Masukkan data contoh atau data latihan. Hasil dihitung dengan JavaScript, bukan berdasarkan tebakan AI.</p>
+   <div class="field-grid">
+    <div class="field-group"><label>Penjualan (Rp)</label><input id="aklSales" type="number" min="0" value="10000000"></div>
+    <div class="field-group"><label>Retur dan potongan (Rp)</label><input id="aklReturn" type="number" min="0" value="500000"></div>
+    <div class="field-group"><label>HPP (Rp)</label><input id="aklHpp" type="number" min="0" value="4000000"></div>
+    <div class="field-group"><label>Beban operasional (Rp)</label><input id="aklExpense" type="number" min="0" value="2000000"></div>
+   </div>
+   <button class="btn dark" style="margin-top:12px" onclick="calculateAkl()">Hitung laporan</button>
+   <div id="aklResult" class="result hidden"></div>
+   <div class="notice" style="margin-top:12px">Rumus: Penjualan bersih = penjualan − retur/potongan. Laba kotor = penjualan bersih − HPP. Laba usaha sederhana = laba kotor − beban operasional. Simulasi ini belum memasukkan pajak, pendapatan lain, dan beban lain.</div>
+  </div>
+  <div class="section-head"><h2>Simulasi Jurnal Umum</h2></div>
+  <div class="card">
+   <p>Contoh: pemilik menyetor modal tunai Rp5.000.000.</p>
+   <div class="table-wrap"><table><tr><th>Akun</th><th>Debit</th><th>Kredit</th></tr><tr><td>Kas</td><td>Rp5.000.000</td><td>-</td></tr><tr><td>Modal pemilik</td><td>-</td><td>Rp5.000.000</td></tr></table></div>
+   <p>Persamaan dasar: Aset = Liabilitas + Ekuitas. Setiap transaksi harus memiliki debit dan kredit dengan jumlah yang sama.</p>
+  </div>
+ </section>
+
+ <section class="page" id="marketing">
+  <div class="hero"><div class="eyebrow">MARKETING & BUSINESS PATH</div><h2>Jalur Kompetensi Pemasaran</h2><p>Bangun merek, pahami konsumen, buat konten, dan rancang strategi pemasaran yang relevan.</p></div>
+  <div class="grid" style="margin-top:15px">
+   <div class="card"><h3>🔎 Riset pasar</h3><p>Menemukan kebutuhan, masalah, tren, dan pesaing.</p></div>
+   <div class="card"><h3>👥 Konsumen</h3><p>Membuat segmentasi dan buyer persona.</p></div>
+   <div class="card"><h3>✨ Branding</h3><p>Menentukan nama, identitas, nilai, dan posisi merek.</p></div>
+   <div class="card"><h3>🖼 Desain promosi</h3><p>Membuat konsep poster, katalog, dan materi visual.</p></div>
+   <div class="card"><h3>✍ Copywriting</h3><p>Membuat judul, deskripsi, dan ajakan bertindak.</p></div>
+   <div class="card"><h3>🎬 Video promosi</h3><p>Menyusun naskah, storyboard, dan konsep video.</p></div>
+  </div>
+  <div class="section-head"><h2>Simulasi Harga dan Promosi</h2></div>
+  <div class="card">
+   <div class="field-grid">
+    <div class="field-group"><label>Nama produk</label><input id="productName" value="Keripik Pisang"></div>
+    <div class="field-group"><label>Modal per produk (Rp)</label><input id="productCost" type="number" min="0" value="8000"></div>
+    <div class="field-group"><label>Harga jual (Rp)</label><input id="productPrice" type="number" min="0" value="12000"></div>
+    <div class="field-group"><label>Target penjualan (unit)</label><input id="productQty" type="number" min="0" value="50"></div>
+   </div>
+   <button class="btn dark" style="margin-top:12px" onclick="calculateMarketing()">Hitung simulasi</button>
+   <div id="marketingResult" class="result hidden"></div>
+  </div>
+ </section>
+
+ <section class="page" id="lab">
+  <div class="section-head"><div><h2>Laboratorium AI</h2><p>Ruang praktik menggunakan AI sebagai asisten, bukan pengganti proses berpikir.</p></div></div>
+  <div class="grid two">
+   <div class="card"><h3>🧾 Lab AKL</h3><p>Latihan mengidentifikasi akun, membuat jurnal, memeriksa debit-kredit, dan menganalisis laporan.</p><button class="btn dark" onclick="showPage('akl')">Buka praktik AKL</button></div>
+   <div class="card"><h3>📣 Lab Pemasaran</h3><p>Latihan membuat profil konsumen, konsep merek, konten promosi, dan rencana kampanye.</p><button class="btn dark" onclick="showPage('marketing')">Buka praktik pemasaran</button></div>
+  </div>
+  <div class="card" style="margin-top:14px"><h3>Alur Praktik AI yang Bertanggung Jawab</h3><ol><li>Tentukan masalah atau tujuan.</li><li>Siapkan data yang tidak bersifat rahasia.</li><li>Tulis prompt yang jelas.</li><li>Periksa hasil AI, fakta, angka, dan sumbernya.</li><li>Perbaiki hasil dengan pengetahuan sendiri.</li><li>Catat proses dan refleksi pembelajaran.</li></ol><div class="notice">Jangan masukkan password, NIK, nomor rekening, data pelanggan, data siswa, atau dokumen rahasia ke layanan AI publik.</div></div>
+ </section>
+
+ <section class="page" id="prompts">
+  <div class="section-head"><div><h2>Prompt Library</h2><p>Salin prompt, ubah bagian dalam tanda kurung sesuai tugas.</p></div></div>
+  <div id="promptList" class="grid two"></div>
+ </section>
+
+ <section class="page" id="dictionary">
+  <div class="section-head"><div><h2>AI Dictionary</h2><p>Kamus istilah penting kecerdasan buatan.</p></div></div>
+  <div class="toolbar"><input id="dictionarySearch" placeholder="Cari istilah..." oninput="renderDictionary()"></div>
+  <div id="dictionaryList" class="grid two"></div>
+ </section>
+
+ <section class="page" id="challenge">
+  <div class="hero"><div class="eyebrow">WEEKLY AI CHALLENGE</div><h2>Tantangan: AI untuk Masalah Nyata</h2><p>Buktikan bahwa kamu dapat menggunakan AI untuk menghasilkan solusi yang berguna.</p></div>
+  <div class="card" style="margin-top:15px"><h3>Tantangan minggu ini</h3><p><b>AKL:</b> Buat contoh pencatatan 5 transaksi usaha kecil, susun jurnal umum, dan periksa keseimbangan debit-kredit.</p><p><b>Pemasaran:</b> Pilih satu produk lokal, buat buyer persona, keunggulan produk, dan tiga ide konten promosi.</p><p><b>Semua peserta:</b> Sertakan prompt, hasil AI, pemeriksaan/koreksi pribadi, dan refleksi.</p><t
